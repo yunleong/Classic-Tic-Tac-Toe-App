@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFDE7">
+
+    <TextView
+        android:id="@+id/tictactoeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Tic Tac Toe"
+        android:textColor="#674ea7"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="120dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/play_button"
+        android:enabled="false"
+        android:fontFamily="@font/allerta_stencil"
+        android:onClick="playButtonOnClick"
+        android:text="Play"
+        app:backgroundTint="@null"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/player2ET"
+        app:layout_constraintVertical_bias="0.791" />
+
+    <TextView
+        android:id="@+id/player1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Player 1 "
+        android:textColor="#C31919"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tictactoeTV"
+        app:layout_constraintTop_toBottomOf="@+id/tictactoeTV" />
+
+    <EditText
+        android:id="@+id/player1ET"
+        android:layout_width="233dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/allerta_stencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player1TV"
+        app:layout_constraintTop_toBottomOf="@+id/player1TV" />
+
+    <TextView
+        android:id="@+id/player2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:text="Player 2"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/player1ET"
+        app:layout_constraintTop_toBottomOf="@+id/player1ET" />
+
+    <EditText
+        android:id="@+id/player2ET"
+        android:layout_width="233dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/allerta_stencil"
+        app:layout_constraintStart_toStartOf="@+id/player2TV"
+        app:layout_constraintTop_toBottomOf="@+id/player2TV" />
+</androidx.constraintlayout.widget.ConstraintLayout>
